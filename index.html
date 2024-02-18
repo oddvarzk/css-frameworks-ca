@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA Modules CSS Frameworks</title>
+    <meta name="description" content="This is the Login page for the Social Media website.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/dist/css/styles.css">
+    <link rel="stylesheet" href="/dist/css/index.css">
+</head>
+<body>
+    <div class="container-fluid px-0">
+
+        <div class="text-center py-4">
+            <h1>Welcome to Sociality!</h1>
+            <p>Please register to access our social website.</p>
+        </div>    
+
+        <div class="container mx-auto py-5">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Register</h4>
+                        <form action="/HTML/profile.html">
+                            <div class="col px-5"> 
+                                <div class="row justify-content-center">
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label"></label>
+                                        <input type="text" class="form-control" id="email" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-md-6">
+                                        <label for="password" class="form-label"></label>
+                                        <input type="text" class="form-control" id="password" placeholder="Password" minlength="8" required>
+                                        <div class="invalid-feedback">Your password needs to have at least 8 characters</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col justify-content-center py-4">
+                                <div class="bg bg-transparent">
+                                    <button type="login" class="btn btn-primary mb-6">Login</button>
+                                </div>
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+</html>

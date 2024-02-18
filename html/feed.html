@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <meta name="description" content="This is the Forum of the website, with user created posts.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f82c4356c6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/dist/css/styles.css">
+    <link rel="stylesheet" href="/dist/css/feed.css">
+</head>
+<body>
+    <div class="container-fluid px-0">
+
+        <nav class="navbar navbar-expand-lg navbar-light shadow px-5">
+            <div class="container-fluid px-5">
+                <a class="navbar-brand ms-auto px-5" href="/html/feed.html">
+                        Sociality
+                </a>
+                <div class="col px-3">
+                    <div class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                                <a class="nav-link me-lg-3" href="/html/feed.html">Feed</a>
+                                <a class="nav-link me-lg-3" href="/html/profile.html">Profile</a>
+                                <a class="nav-link me-lg-3" href="/index.html">Logout</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <h3 class="text-center py-4 text-muted">Feed</h3>
+
+
+        <!--Create post section-->
+        <div class="container">
+            <div class="row py-4 px-5">
+                <div class="col-md-7">
+                    <div class="mb-1">
+                        <form class="was-validated">
+                            <label for="validationTextarea" class="form-label"></label>
+                            <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Write a post" required></textarea>   
+                                </div>
+                            <button type="submit" class="btn btn-secondary" >Post</button>
+                        </form>
+                </div>
+                <div class="col-md-4 py-4">
+                    <div class="input-group">
+                        <input type="search" class="form-control rounded" placeholder="Search for posts" aria-label="Search" aria-describedby="search-add" />
+                        <span class="input-group-text border-0" id="search-add">
+                          <button class="fas fa-search border-0"></i>
+                        </span>
+                </div>
+            </div>
+        </div>
+        <!--Create post END-->
+
+        <div class="container-fluid px-5">
+            <div class="row">
+                <form class="was-validated">
+                    <div class="form-group">
+                        <select class="custom-select" required>
+                          <option value="">Sort posts</option>
+                          <option value="1">Newest Posts</option>
+                          <option value="2">Most Popular</option>
+                          <option value="3">Relevant</option>
+                        </select>
+                      </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <!--Feed of other posts on the page-->
+        <div class="container mx-auto px-5 py-5">
+            <div class="card h-100 shadow-lg border-0 bg-light">
+                <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-2 px-0">
+                                <h4 class="text-center">User302</h4>
+                                <img class="card-img" src="/images/profile.jpg" alt="Profile Image">
+                            </div>
+                            <div class="col-md-8 py-2">
+                                    <div class="card-text text-muted">
+                                        <p>Condimentum id venenatis a condimentum. Viverra orci sagittis eu volutpat. Ipsum dolor sit amet consectetur adipiscing elit duis tristique. 
+                                            Sagittis eu volutpat odio facilisis. Malesuada fames ac turpis egestas sed tempus urna et pharetra. Diam sollicitudin tempor id eu nisl. 
+                                            Integer eget aliquet nibh praesent tristique magna sit amet. Nibh cras pulvinar mattis nunc sed blandit libero volutpat sed. Ut sem viverra aliquet eget sit amet tellus. 
+                                            Aliquam purus sit amet luctus venenatis. Cras tincidunt lobortis feugiat vivamus at augue. 
+                                            Eu non diam phasellus vestibulum lorem sed risus. Fames ac turpis egestas sed tempus urna et pharetra pharetra.</p>
+                                    </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-5 py-5">
+            <div class="card h-100 shadow-lg border-0 bg-light">
+                <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-2 px-0">
+                                <h4 class="text-center">User846</h4>
+                                <img class="card-img" src="/images/profile.jpg" alt="Profile Image">
+                            </div>
+                            <div class="col-md-8 py-2">
+                                    <div class="card-text text-muted">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-5 py-5">
+            <div class="card h-100 shadow-lg border-0 bg-light">
+                <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-2 px-0">
+                                <h4 class="text-center">User948</h4>
+                                <img class="card-img" src="/images/profile.jpg" alt="Profile Image">
+                            </div>
+                            <div class="col-md-8 py-2">
+                                    <div class="card-text text-muted">
+                                        <p>Ut tristique et egestas quis ipsum suspendisse ultrices gravida. Non curabitur gravida arcu ac tortor dignissim convallis. Vitae turpis massa sed elementum. 
+                                            Suspendisse in est ante in. Mi proin sed libero enim. Sem fringilla ut morbi tincidunt augue interdum velit euismod in. Viverra justo nec ultrices dui sapien. 
+                                            Urna molestie at elementum eu. Sed viverra tellus in hac habitasse platea dictumst. Viverra nibh cras pulvinar mattis nunc sed. Ut sem viverra aliquet eget sit. 
+                                            Praesent elementum facilisis leo vel fringilla est ullamcorper eget. Amet mauris commodo quis imperdiet. Nisl suscipit adipiscing bibendum est. 
+                                            Pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae. Et netus et malesuada fames ac. Justo donec enim diam vulputate ut pharetra.</p>
+                                    </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!--Feed END-->
+
+    </div>
+</body>
+</html>
