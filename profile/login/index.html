@@ -28,20 +28,31 @@
                                 <div class="row justify-content-center">
                                     <div class="col-md-6">
                                         <label for="email" class="form-label"></label>
-                                        <input type="text" class="form-control" id="email" placeholder="Email" autocomplete="on" required>
+                                        <input type="text" 
+                                                class="form-control" 
+                                                id="email" 
+                                                placeholder="Email" 
+                                                autocomplete="on" 
+                                                pattern="^[\w\-.]+@(stud\.)?noroff\.no$" 
+                                                required>
                                     </div>
                                 </div>
                                 <div class="row justify-content-center">
                                     <div class="col-md-6">
                                         <label for="password" class="form-label"></label>
-                                        <input type="text" class="form-control" id="password" placeholder="Password" minlength="8" required>
+                                        <input type="text" 
+                                                class="form-control" 
+                                                id="password" 
+                                                placeholder="Password" 
+                                                minlength="8" 
+                                                required>
                                         <div class="invalid-feedback">Your password needs to have at least 8 characters</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col justify-content-center py-4">
                                 <div class="bg bg-transparent">
-                                    <button type="login" class="btn btn-primary mb-6">Login</button>
+                                    <button type="login" class="btn btn-secondary mb-6">Login</button>
                                 </div>
                             </div>
                         </form>

@@ -6,7 +6,7 @@
     <title>CA Modules CSS Frameworks</title>
     <meta name="description" content="This is the Login page for the Social Media website.">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/dist/css/styles.css">
     <link rel="stylesheet" href="/dist/css/index.css">
     <script type="module" src="/src/scss/js/index.mjs"></script>
@@ -22,26 +22,50 @@
         <div class="container mx-auto py-5">
             <div class="card">
                 <div class="card-body text-center">
-                    <h4 class="card-title">Register</h4>
-                        <form id="registerForm" action="/profile">
-                            <div class="col px-5"> 
+                    <h4 class="card-title">Register your account</h4>
+                        <form id="registerForm" method="get" action="/auth/register">
+                            <div class="col px-5">
                                 <div class="row justify-content-center">
                                     <div class="col-md-6">
-                                        <label for="email" class="form-label"></label>
-                                        <input type="text" class="form-control" id="email" placeholder="Email" autocomplete="on" required>
+                                        <label for="name" class="form-control"></label>
+                                        <input type="text" 
+                                                class="form-control" 
+                                                id="name" 
+                                                placeholder="Username" 
+                                                maxlength="20" 
+                                                pattern="^[\w]+$" 
+                                                required
+                                                title="Your username can only be text with no space. Example : Barack Obama">
+                                    </div>
+                                </div> 
+                                <div class="row justify-content-center">
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-control"></label>
+                                        <input type="email" 
+                                                class="form-control" 
+                                                id="email" 
+                                                placeholder="Email" 
+                                                autocomplete="on" 
+                                                pattern="^[\w\-.]+@(stud\.)?noroff\.no$" 
+                                                required
+                                                title="Your Email has to end with @noroff.no or stud.noroff.no">
                                     </div>
                                 </div>
                                 <div class="row justify-content-center">
                                     <div class="col-md-6">
-                                        <label for="password" class="form-label"></label>
-                                        <input type="text" class="form-control" id="password" placeholder="Password" minlength="8" required>
-                                        <div class="invalid-feedback">Your password needs to have at least 8 characters</div>
+                                        <label for="password" class="form-control"></label>
+                                        <input type="password" 
+                                                class="form-control" 
+                                                id="password" 
+                                                placeholder="Password" 
+                                                minlength="8" 
+                                                required>
                                     </div>
                                 </div>
                             </div>
                             <div class="col justify-content-center py-4">
                                 <div class="bg bg-transparent">
-                                    <button type="login" class="btn btn-primary mb-6">Create account</button>
+                                    <button type="login" class="btn btn-secondary mb-6">Create account</button>
                                 </div>
                             </div>
                         </form>
