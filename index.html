@@ -16,39 +16,29 @@
 
         <div class="text-center py-4">
             <h1>Welcome to Sociality!</h1>
-            <p>Please register to access our social website.</p>
+            <p>Please register or create an account to gain access to our social website.</p>
         </div>    
 
         <div class="container mx-auto py-5">
             <div class="card">
-                <div class="card-body text-center">
-                    <h4 class="card-title">Register</h4>
-                        <form action="/HTML/profile.html">
+                <div class="card-body text-center ">
+                    <h4 class="card-title fw-normal">Register or login</h4>
+                    <p class="card-description py-1 fw-light">Use one of two buttons below to login or create your account.</p>
                             <div class="col px-5"> 
-                                <div class="row justify-content-center">
-                                    <div class="col-md-6">
-                                        <label for="email" class="form-label"></label>
-                                        <input type="text" class="form-control" id="email" placeholder="Email" autocomplete="on" required>
-                                    </div>
-                                </div>
-                                <div class="row justify-content-center">
-                                    <div class="col-md-6">
-                                        <label for="password" class="form-label"></label>
-                                        <input type="text" class="form-control" id="password" placeholder="Password" minlength="8" required>
-                                        <div class="invalid-feedback">Your password needs to have at least 8 characters</div>
+                                <div class="col justify-content-center py-2">
+                                    <div class="bg bg-transparent">
+
+                                        <a href="/profile/register/index.html"><button type="login" class="btn btn-secondary mb-6">Sign up</button></a>
+
+                                        <a href="/profile/login/index.html"><button type="login" class="btn btn-secondary mb-6">Login</button></a>
+
                                     </div>
                                 </div>
                             </div>
-                            <div class="col justify-content-center py-4">
-                                <div class="bg bg-transparent">
-                                    <button type="login" class="btn btn-primary mb-6">Login</button>
-                                </div>
-                            </div>
-                        </form>
                 </div>
             </div>
         </div>
-
+    </div>
 
 </body>
 </html>
